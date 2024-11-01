@@ -1,0 +1,198 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f7f8fc;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.app-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+header {
+  width: 100%;
+  background: #4a90e2;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+
+input[type="text"] {
+  width: 100%;
+  max-width: 600px;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.centr {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.centr select, .centr button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #4a90e2;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.centr button:hover, .centr select:hover {
+  background-color: #357ab8;
+}
+
+
+.animal-catalog {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  width: 100%;
+  max-width: 1500px;
+  padding: 1rem;
+}
+
+.animal-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.animal-card img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.animal-card button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.animal-card button:hover {
+  background-color: #357ab8;
+}
+
+
+.animal-details {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.animal-details img {
+  width: 100%;
+  max-width: 300px; 
+  max-height: 300px; 
+  object-fit: contain; 
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.animal-details button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.animal-details button:hover {
+  background-color: #357ab8;
+}
+
+
+.faq-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.faq-section h2 {
+  text-align: center;
+  color: #4a90e2;
+  margin-bottom: 1rem;
+}
+
+
+.faq-accordion-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.faq-accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: #4a90e2;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 8px 8px 0 0;
+}
+
+.faq-accordion-header h3 {
+  margin: 0;
+}
+
+.faq-accordion-header span {
+  font-size: 1.5rem;
+}
+
+.faq-accordion-content {
+  padding: 1rem;
+  background-color: #f7f8fc;
+  color: #333;
+  border-radius: 0 0 8px 8px;
+}
